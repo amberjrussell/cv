@@ -7,6 +7,80 @@
 </head>
 
 <body>
+  <form action="/my-handling-form-page" method="post">
+			<ul>
+				<li>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="user_name" />
+				</li>
+        <li>
+					<label for="phone">Phone:</label>
+					<input type="text" id="phone" name="user_phone" />
+				</li>
+				<li>
+					<label for="mail">E-mail:</label>
+					<input type="email" id="mail" name="user_mail" />
+				</li>
+         <li>
+					<label for="street">Street:</label>
+					<input type="text" id="street" name="user_street" />
+				</li>
+        <li>
+					<label for="city">City:</label>
+					<input type="text" id="city" name="user_city" />
+				</li>
+         <li>
+					<label for="search">Search:</label>
+					<input type="search" id="search" name="user_search" />
+				</li>
+        <li>
+					<label for="zip">Zip Code:</label>
+				<input type="text" id="zip" name="user_zip" />
+				</li>
+        
+        </li>
+      <label for="select">Business Type
+      <div class="select-wrapper"><select id="select" name="select">
+  <option>Security</option>
+  <option>Fence</option>
+  <option>Deck</option>
+  <option>Landscaping</option>
+  <option>Pet Services</option>
+  <option>Roofing</option>
+  <option>Cable / Internet</option>
+</select></div>
+      </li>
+       
+        <fieldset>
+  <legend>How soon is this needed?</legend>
+  <ul>
+     <li>
+      <label for="immediatley">Immediately</label>
+      <input type="radio" id="immediatley" name="timeline" value="immediatley" checked>
+    </li>
+    <li>
+      <label for="3days">1 to 3 Days</label>
+      <input type="radio" id="3days" name="timeline" value="3days">
+    </li>
+       <li>
+      <label for="7days">3 to 7 Days</label>
+      <input type="radio" id="7days" name="timeline" value="7days">
+    </li> 
+     <li>
+      <label for="14days">7 to 14 Days</label>
+      <input type="radio" id="14days" name="timeline" value="14days">
+    </li> 
+  </ul>
+</fieldset>
+				<li>
+					<label for="msg">Details:</label>
+					<textarea id="msg" name="user_message"></textarea>
+				</li>
+				<li class="button">
+					<button type="submit">Submit Your Lead</button>
+				</li>
+			</ul>
+		</form>
   <table cellspacing="20">
     <tr>
       <td><img src="Amber.jpg" alt="amber profile picture"
